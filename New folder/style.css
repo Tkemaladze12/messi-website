@@ -1,0 +1,536 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #07111e;
+    color: #f4f7fb;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    padding: 22px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #243347;
+    background: #07111e;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #79c9f2;
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #b8c5d4;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #79c9f2;
+}
+
+.header-btn {
+    border: 1px solid #34485d;
+    padding: 11px 15px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    background: radial-gradient(circle at 80% 40%, #193a58, #07111e 60%);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #79c9f2;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(65px, 8vw, 115px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span,
+.section-title span {
+    color: #79c9f2;
+}
+
+.description {
+    max-width: 430px;
+    color: #b1bfd0;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 14px 20px;
+    margin-top: 25px;
+    background: #79c9f2;
+    color: #07111e;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.hero-info {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #34485d;
+}
+
+.hero-info p {
+    color: #8498ad;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.hero-info h3 {
+    font-size: 12px;
+}
+
+.hero-image {
+    flex: 0 0 43%;
+    height: 470px;
+    position: relative;
+    background: #183b57;
+}
+
+.hero-image img {
+    height: 100%;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 55px 25px 25px;
+    background: linear-gradient(transparent, #06101ded);
+}
+
+.image-caption p {
+    color: #79c9f2;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.image-caption h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.stats {
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    background: #0c1a2a;
+    border-top: 1px solid #25374b;
+    border-bottom: 1px solid #25374b;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 5px 20px;
+    border-right: 1px solid #29394c;
+}
+
+.stat-card:first-child {
+    padding-left: 0;
+}
+
+.stat-card:last-child {
+    border: none;
+}
+
+.stat-card h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+}
+
+.stat-card p {
+    color: #9baabd;
+    font-size: 11px;
+}
+
+.section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.story-image {
+    flex: 0 0 40%;
+    height: 350px;
+    background: #193b56;
+}
+
+.story-image img {
+    height: 100%;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.story-text p {
+    color: #aab8c8;
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.career {
+    background: #0a1726;
+}
+
+.career-grid {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.career-card {
+    flex: 1 1 220px;
+    background: #102137;
+    border: 1px solid #25384d;
+    transition: 0.3s;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    border-color: #79c9f2;
+}
+
+.career-card img {
+    height: 210px;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.year {
+    color: #79c9f2;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.card-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card-content p:last-child {
+    color: #aab8c8;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.argentina {
+    margin-top: 30px;
+    padding: 28px;
+    border-left: 3px solid #79c9f2;
+    background: #102137;
+}
+
+.argentina h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.argentina p {
+    color: #aab8c8;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.world-cup {
+    display: flex;
+    align-items: center;
+    background: #102137;
+}
+
+.world-cup-image {
+    width: 50%;
+    height: 430px;
+    background: #244763;
+}
+
+.world-cup-image img {
+    height: 100%;
+}
+
+.world-cup-text {
+    flex: 1;
+    padding: 45px;
+}
+
+.world-cup-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.world-cup-text h2 span {
+    color: #e5c47b;
+}
+
+.world-cup-text > p:last-child {
+    color: #aab8c8;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.honours {
+    background: #07111e;
+}
+
+.honours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.honour-card {
+    flex: 1 1 220px;
+    padding: 28px;
+    min-height: 220px;
+    background: #0c1b2c;
+    border: 1px solid #27394e;
+    transition: 0.3s;
+}
+
+.honour-card:hover {
+    transform: translateY(-5px);
+    border-color: #79c9f2;
+}
+
+.honour-card h2 {
+    color: #79c9f2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.honour-card h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.honour-card p {
+    color: #aab8c8;
+    font-size: 12px;
+}
+
+.legacy {
+    background: radial-gradient(circle at 80% 50%, #173b59, #07111e 65%);
+}
+
+.legacy > p:last-child {
+    max-width: 800px;
+    color: #aab8c8;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer {
+    padding: 30px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #25374b;
+    background: #050d17;
+}
+
+.footer p,
+.footer > a:last-child {
+    color: #9baabd;
+    font-size: 11px;
+}
+
+/* Responsive design */
+
+@media (max-width: 850px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .hero-image {
+        flex-basis: 42%;
+        height: 390px;
+    }
+
+    .story-content {
+        gap: 25px;
+    }
+
+    .world-cup-text {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        width: 100%;
+        order: 3;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+        width: 100%;
+        height: 350px;
+    }
+
+    .hero-info {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+        gap: 20px 0;
+        padding: 25px 5%;
+    }
+
+    .stat-card {
+        flex: 0 0 50%;
+        padding: 10px 15px;
+    }
+
+    .stat-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-card:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .story-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .story-image {
+        flex-basis: auto;
+        width: 100%;
+        height: 300px;
+    }
+
+    .world-cup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .world-cup-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .world-cup-text {
+        padding: 40px 5%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 25px 5%;
+    }
+}
